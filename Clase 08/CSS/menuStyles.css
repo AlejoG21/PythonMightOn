@@ -1,0 +1,32 @@
+*{
+    /*Este es el selector universal, que te permite aplicar atributos a TODOS los elementos al mismo tiempo.*/
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: greenyellow;
+}
+a{
+    text-decoration: none;
+    /*Le saca el subrayado, negrita, etc al texto*/
+
+}
+a:hover{
+    /*hover es para cuando le pasas el mouse por encima.*/
+    color: red;
+}
+/* a:before{
+    content: "El link ";
+}
+el uso de ":" es para declarar estados o transiciones.
+content: te permite agregar texto u otras cosas */
+li{
+    list-style-type: none;
+    /*Saca los puntos que remarcan los items de lista*/
+    margin: 10%;
+}
+img{
+    border-radius: 50%;
+    /*Esto crea una imagen REDONDA*/
+    
+}

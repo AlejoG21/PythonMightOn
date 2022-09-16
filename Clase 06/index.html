@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--<style> solo se utiliza dentro de head. no funciona en otro lado.
+        Hoy en día es mala practica utilizar <style en head.-->
+    <style>
+        p{
+            color:violet
+        }
+    </style>
+    <!--acá el style esta tratando de establecer letra color violeta, pero inmediatamente el CSS lo pisotea.-->
+    <link rel="stylesheet" href="CSS/styles.css"> <!--el link que establece todo lo remarcado en CSS-->
+</head>
+<body>
+    <h1>Lorem.</h1>
+    <p id="dumbass" class="the-nago-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium eos minus eum cumque quaerat, distinctio corrupti tempora voluptate perferendis pariatur ex labore ea mollitia aut ratione! A ipsam praesentium exercitationem?</p>
+    <p id="2" class="the-nago-paragraph">Lorem ipsum dolor sit amet <span id="elbarto"> consectetur adipisicing </span> <!--span no hace nada por si solo, pero te permite aplicar clases, ids y otras cosas a pequeñas selecciones--> elit. Accusamus, sapiente nisi doloremque tenetur, magni est dolores pariatur aperiam cum, odit molestiae nostrum. Optio explicabo dolorum repudiandae ducimus et, officiis soluta?</p>
+    <div id="eldiv"> <!-- divs crean CAJAS alrededor de las cosas. Cajas que pueden ser estilizadas también.-->
+    <p id="3" class="the-nago-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam voluptatem perferendis at! Expedita itaque hic nostrum vitae animi quasi! Suscipit quas quam deserunt quo sit, laboriosam nesciunt facere repellendus aliquid.</p>
+    </div>
+</body>
+</html>

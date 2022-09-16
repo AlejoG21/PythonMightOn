@@ -1,0 +1,10 @@
+body{
+    background: linear-gradient(90deg,blue, yellow);
+}
+.proyectos-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(360px,1fr));
+}
+.proyectos-item{
+    background: rgba(0, 0, 50, 0.3);
+}

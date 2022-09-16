@@ -1,0 +1,22 @@
+h1{
+    font-weight: bold;
+}
+p{
+    color:greenyellow
+}
+
+.the-nago-paragraph{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:green;
+}
+#dumbass{
+    font-family: 'Times New Roman', Times, serif;
+    color:purple;
+}
+#elbarto{
+    font-size: larger;
+}
+#eldiv{
+    border-style: double;
+    background-color: cadetblue;
+}

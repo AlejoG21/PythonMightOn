@@ -1,0 +1,63 @@
+a{
+    background-color: blueviolet;
+    color: green;
+    /*Primer numero, arriba y abajo, segundo numero a los costados*/
+    padding: 10px 20px;
+    /*También podes agarrar un tercer y cuarto numero para definir cada lado por separado*/ 
+    /*Transition te permite establecer como se daría la modificación de los atributos*/
+    /*property es a cuales atributos afecta*/
+    transition-property: all;
+    /*duration es cuanto tarda la animación*/
+    transition-duration: 3s;
+    /*timing es como se da el proceso dentro de la duración*/
+    transition-timing-function: ease-in;
+}
+a:hover{
+    background-color: yellow;
+    color: black;
+    padding: 20px 10px;
+    /*Podes usar transition a secas para poner todos los detalles de una.*/
+    transition: all 0.2s ease;
+}
+/*:visited se aplica una vez el link fue clickeado
+a:visited{
+background-color: aquamarine;
+}*/
+/*:active ocurre por un minimo momento, exactamente cuando el usuario clickea*/
+a:active{
+    color: pink;
+}
+/*:before is used to add things before every element selected*/
+a::before{
+    content: "El link ";
+}
+/*:after es lo opuesto, agrega cosas despues del elemento*/
+a::after{
+    content: " <<-Cool stuff!";
+}
+
+@keyframes changeColor{
+    /*from es donde empieza*/
+    from{
+background-color: purple;
+    }
+    /*to es donde termina*/
+    to {
+background-color: green;
+    }
+}
+.anim{
+    height: 10rem;
+    width: 10rem;
+    /*infinite lo pone en loop*/
+    /*alternate lo hace ir y volver*/
+    animation: changeColor 5s infinite alternate;
+}
+.parrafo{
+    height: 20rem;
+    width: 30rem;
+}
+div p:hover{
+    align-content: center;
+    text-align: center;
+}

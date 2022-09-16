@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://formspree.io/f/xqkjkvjy" method="post"> <!-- en action se agrega el endpoint-->
+        <label for="nombre">Nombre:</label> <!--for indica a que cosa corresponde este label-->
+        <input type="text" name="nombre" id="nombre" size="300" maxlength="5000" value="Fagget">
+    
+    <!-- this is a comment. you make em with control K and then control C -->
+    <!-- you can also just nest em -->
+
+        <label><input type="text" name="apellido" id="apellido"></label>
+        <label>
+            <select name="selector" id="selector" required> <!--required obliga al usuario a llenar esta parte-->
+                <option value="De tin">De tin</option>
+                <option value="Marin">Marin</option>
+                <option value="De do">De do</option>
+                <option value="Pingue">Pingue</option>
+            </select>
+        </label>
+        <label for="buttons">
+            <input type="radio" name="gender"id="buttons">Hombre
+            <input type="radio" name="gender"id="buttons">Mujer
+            <input type="radio" name="gender"id="buttons">Negro
+        </label>
+        <label for="fecha">
+            <input type="date" name="dia" id="dia">
+        </label>
+        <label for=""></label>
+        <br>
+        <label for="">
+            <textarea name="comentarios" id="comentarios" cols="30" rows="10">
+            </textarea>
+        </label>
+        <input type="submit" name="submit" id="submit">
+
+    </form>
+</body>
+</html>

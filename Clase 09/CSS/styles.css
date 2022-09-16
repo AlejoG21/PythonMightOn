@@ -1,0 +1,38 @@
+html{
+    font-size: 62.5%; /*10px*/
+    /*EL FONT SIZE DEFAULT ES DE 16PX, si lo multiplicas por 62.5%
+     queda en 10px, que es más facil de manejar.*/
+}
+.grid-container{
+ display: grid;
+ /*REM siempre esta basado en la base establecida en el HTML*/
+ grid-template-columns: 15rem 20rem 15rem;
+/*Usar REM permite luego modificar todo de manera unificada.*/
+ grid-template-rows: 15rem 20rem 15rem;
+ /*grid-template puede aplicar ambas cosas al mismo tiempo*/
+ /*primero filas, después columnas*/
+ grid-template: 10rem 10rem 10rem /15rem 15rem 15rem 15rem;
+ /*Podes usar repeat() si van a ser todos iguales*/
+ grid-template: repeat(4,10rem)/repeat(4,10rem);
+ /*con gap podes definir el margen entre todas las cajas*/
+ gap: 0.5rem;
+ /*especificamente las columnas*/
+ column-gap: 0.5rem;
+ /*especificamente las filas*/
+ row-gap: 0.5rem;
+
+}
+.grid-item{
+    background-color: greenyellow;
+    border: 3px solid black;
+}
+#cajitaEspecial{
+    background-color: aquamarine;
+    /*con grid también podes definir el espacio que ocupe una caja*/
+    /*utiliza los numeros de fila y columna definidos por el grid*/
+    grid-column-start: 2;
+    grid-column-end: 4;
+    /*grid row para las filas*/
+    grid-row-start: 1;
+    grid-row-end:3;
+}

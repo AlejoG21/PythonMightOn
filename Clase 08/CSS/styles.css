@@ -1,0 +1,23 @@
+.flex-container{
+    display: flex;
+    background-color: aqua;
+    width: 50vh;
+    height: 50vh;
+    /*VH stands for VIEWPORT, the device's area.*/
+    justify-content: space-between;
+    /*Todo lo que afecta a un contenedor afecta a sus hijos directos*/
+}
+/*EN CSS SE COMENTA ASÍ*/
+/* tambien se puede comentar seleccionando y apretando control + } */
+.flex-item{
+    background-color: violet;
+    width: 15%;
+    height: 15%;
+    /*Estos porcentajes son en base al contenedor.*/
+    border: 3px solid black;
+
+}
+#flex2{
+ align-items: center;
+ background-color: darkblue;  
+}

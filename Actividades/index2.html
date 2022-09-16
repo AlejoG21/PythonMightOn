@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h2>Buttons</h2>
+<audio controls src="../01 - Fly Away (TV Version).mp3" >FLY AWAY NOW<!-- The content inside an audio tag is what will show up if the audio fails.--></audio>
+<button name="defiant button" type="button">click me... IF YOU DARE</button>  
+<button name="menu button" type="menu">Menu</button>
+<button name="submit button" type="submit" disabled>SUBMIT</button>
+<button name="reset button" type="reset" onclick="myFun()">Resetti</button> <!--onclick allows us to run basic functions when the button is clicked.-->
+<a href="https://wiki.installgentoo.com/index.php/Main_Page"><button>Install Gentoo</button></a>
+</section>
+<hr>
+<section>
+    <h2>forms</h2>
+    <form action="do_something.php" method="post">
+        <label for="First Name">
+            <input id="First Name" name="First Name" type="text">
+        </label>
+    </form>
+</section>
+
+
+<script>function myFun(){
+document.getElementsByName("submit button")[0].removeAttribute("disabled")
+}</script> 
+</body>
+</html>

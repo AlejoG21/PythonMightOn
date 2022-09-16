@@ -1,0 +1,25 @@
+header{
+    background-color: blue;
+}
+footer{
+    background-color: brown;
+}
+section span img{
+    height: 200px;
+    width: 200px;
+}
+span{
+    background-color: blue;
+}
+div{
+    background-color: green;
+    height: 100px;
+    width: 100px;
+}
+@font-face {
+    font-family: "LaFuente";
+    src: url(../fonts/blackjack.otf);
+}
+a{
+    font-family: "LaFuente";
+}
