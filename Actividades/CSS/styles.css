@@ -1,0 +1,27 @@
+html{
+    font-size: 62.5%; /*ahora el rem es 10px*/
+}
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column wrap;
+    height: 100rem;
+    align-items: flex-end;
+}
+.flex-item{
+    border: 1px;
+}
+.grid-container{
+    display: grid;
+    
+    grid-template: repeat(4,20rem)/repeat(4,15rem);
+}
+.grid-item{
+    border: 1px;
+}
+#test1{
+    position: fixed;
+}
+#test2{
+    position: sticky;
+}
