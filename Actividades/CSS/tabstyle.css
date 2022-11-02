@@ -1,0 +1,33 @@
+.output{
+    font: .9rem 'Fira Sans', sans-serif;
+}
+p{
+    font-style: italic;
+}
+div,
+label {
+    display: block;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+}
+div:focus{
+    font-weight: bold;
+}
+span{
+    background-color: skyblue;
+}
+.red{
+    color: #f33;
+}
+.yellow-bg{
+    background: #ffa;
+}
+.fancy{
+    font-weight: bold;
+    text-shadow: 4px 4px 3px #77f;
+}
+p:not(article >p){
+    font-style: normal;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
